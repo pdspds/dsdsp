@@ -1,0 +1,97 @@
+.root {
+    .setting {
+        width: 100%;
+        width: 100%;
+        height: calc(100% - 55px);
+        position: absolute;
+        display: none;
+        &.active {
+            display: block;
+        }
+        .setting_header {
+            z-index: 2;
+            position: absolute;
+            top: 24px;
+            width: 100%;
+            height: 56px;
+            .setting_header_top {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                width: calc(100% - 15%);
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                .setting_header_left {
+                    .back {
+                        border-radius: 50px;
+                        width: 40px;
+                        height: 40px;
+                        background: #F4F4F4;
+                        margin-right: 10px;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            top: 10px;
+                            position: relative;
+                        }
+                    }
+                    .txt {
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        margin-right: 8px;
+                    }
+
+                }
+                .setting_header_right {
+                    .option {
+                        margin-left: auto;
+                        position: relative;
+                        right: 0;
+                        float: right;
+                        border-radius: 50px;
+                        width: 40px;
+                        height: 40px;
+                        background: #F4F4F4;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            top: 10px;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+        .setting_wrap {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 155px);
+            margin-top: 80px;
+            margin-bottom: 75px;
+            overflow: auto;
+            .setting_menu_list {
+                width: calc(100% - 15%);
+                margin: auto;
+                .setting_menu {
+                    width: 100%;
+                    text-align: left;
+                    padding: 15px 0;
+                    border-bottom: 1px solid #DEDEDE;
+                    a {
+                        color: #000;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        text-decoration: none;
+                        display: block;
+                        span {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

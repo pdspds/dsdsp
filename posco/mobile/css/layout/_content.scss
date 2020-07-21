@@ -1,0 +1,1331 @@
+.root {
+    width: 100%;
+    height: auto;
+    .bg_ {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url(../img/gnb/main_bg.png) 100% top / 100% 290px no-repeat;
+    }
+    .search_input_div {
+        width: 100%;
+        height: auto;
+        display: none;
+        border-radius: 4px;
+        position: absolute;
+        top: 210px;
+        z-index: 1;
+        &.active {
+            display: block;
+            filter: drop-shadow(2px 20px 20px #0000001a);
+            & .detail_search{
+                animation: in-Height 0.3s ease-in-out;
+            }
+        }
+        .detail_search {
+            border: 1px solid #bbb;
+            background: #fff;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            width: calc(100% - 15% - 35px);
+            margin: 0 auto;
+            height: 254px;
+            .detail {
+                height: 100%;
+                .search_content_list {
+                    height: 100%;
+                    ul {
+                        width: 100% !important;
+                        height: 100% !important;
+                        top: 0 !important;
+                        left: 0 !important;
+                        overflow: auto;
+                        li {
+                            .ui_list {
+                                padding: 15px 0px;
+                                margin: 0 20px;
+                                border-bottom: 1px solid #DEDEDE;
+                                a {
+                                    text-decoration: none;
+                                    color: #1f1f1f;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    div {
+                                        font-size: 1.4rem;
+                                        display: inline-block;
+                                        &:first-child {
+                                            width: 69%;
+                                            text-align: left;
+                                            span {
+                                                font-size: 1.4rem;
+                                                color: #1487F7;
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                            width: 30%;
+                                            text-align: right;
+                                            font-size: 1.2rem;
+                                            color: #bbb;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .dim_full {
+        width: 100%;
+        height: 200vh;
+        position: absolute;
+        z-index: 5;
+        display: none;
+        &.active {
+            display: block;
+        }
+        .dim {
+            width: 100%;
+            height: 200vh;
+            background: #000;
+            opacity: 0.5;
+            position: absolute;
+            z-index: 5;
+        }
+        .user_search {
+            z-index: 6;
+            width: 86.5%;
+            height: 415px;
+            display: inline-block;
+            top: 25%;
+            position: relative;
+            background: #fff;
+            border-radius: 10px;
+            transform: translate(0px, -50%);
+            .user {
+                height: 100%;
+                align-items: center;
+                width: calc(100% - 15%);
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                .header_user {
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: relative;
+                    top: 0px;
+
+
+                    .header_user_left {
+                        display: inline-block;
+                        bottom: 0;
+                        position: absolute;
+                        .title {
+                            font-size: 1.8rem;
+                            display: inline-block;
+                            margin-right: 5px;
+                            font-weight: bold;
+                        }
+                        span {
+                            font-size: 1.8rem;
+                            color: #007EFF;
+                            font-weight: bold;
+                        }
+                    }
+                    .header_user_right {
+                        display: inline-block;
+                        bottom: 2px;
+                        position: absolute;
+                        right: 0;
+                        height: 20px;
+                        width: 20px;
+                        .exit {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .content_user {
+                    width: 100%;
+                    height: 345px;
+                    position: relative;
+                    .user_input_box {
+                        position: relative;
+                        width: 100%;
+                        margin-top: 8px;
+                        margin-bottom: 10px;
+                        .user_input {
+                            width: 100%;
+                            border: 0;
+                            border-bottom: 2px solid black;
+                            outline: 0;
+                            color: #000000;
+                            padding: 10px 0;
+                            background: transparent;
+                            font-size: 1.6rem;
+                            line-height: 1;
+                            &::placeholder {
+                                color: #B8B8B8;
+                            }
+                        }
+                        .user_a {
+                            padding: 12px 0;
+                            position: absolute;
+                            right: 0;
+                            width: 2em;
+                            height: 2em;
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+
+                    .user_btn_list_box {
+                        position: relative;
+                        width: 100%;
+                        height: 40px;
+                        .user_btn {
+                            border-radius: 5px;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 40px;
+                            outline: 0px;
+                            border: 0px;
+                            img {
+                                width: 12px;
+                                height: 12px;
+                                margin-right: 5px;
+                            }
+                            span {
+                                color: #0000005e;
+                                font-size: 1.2rem;
+                            }
+
+                        }
+                        .user_result_list {
+                            position: relative;
+                            width: 109%;
+                            height: 100%;
+                            box-sizing: content-box;
+                            overflow-x: scroll;
+                            list-style: none;
+                            display: flex;
+                            .user_result {
+                                flex-shrink: 0;
+                                margin-right: 5px;
+                                text-align: center;
+                                background: #F0F0F5;
+                                width: auto;
+                                border-radius: 5px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                span {
+                                    font-size: 1.4rem;
+                                    padding: 10px 20px 10px 10px;
+                                }
+                                a {
+                                    img {
+                                        margin: 3px 10px 0 0;
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    .user_search_list {
+                        width: 100%;
+                        height: 215px;
+                        margin-top: 5px;
+                        overflow-y: scroll;
+                        .user_list_result {
+                            position: relative;
+                            width: 100%;
+                            height: 50px;
+                            border-bottom: 1px solid #E8E9ED;
+                            .user_list_a {
+                                width: 100%;
+                                text-decoration: none;
+                                .user_list_left {
+                                    position: absolute;
+                                    width: 50%;
+                                    height: 100%;
+                                    text-align: left;
+                                    display: flex;
+                                    align-items: center;
+                                    span {
+                                        font-size: 1.4rem;
+                                        color: #000;
+                                    }
+                                }
+                                .user_list_right {
+                                    width: 50%;
+                                    height: 100%;
+                                    position: absolute;
+                                    right: 0;
+                                    float: right;
+                                    display: flex;
+                                    align-items: center;
+                                    .user_info {                                        
+                                        right: 0;
+                                        position: absolute;
+                                        span {
+                                            font-size: 1.2rem;
+                                            color: #AAAAAA;
+                                            &.bar {
+                                                font-size: 1.0rem;
+                                                position: relative;
+                                                top: -1.5px;
+                                                color: #e4e4e4;
+                                            }
+                                            &:nth-child(1) {
+                                                margin-right: 5px;
+                                            }
+                                            &:nth-child(2) {
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_user {
+                position: absolute;
+                right: 0;
+                width: 100%;
+                height: 50px;
+                bottom: -1px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: #1487F7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                span {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
+
+    .wrap {
+        display: flex;
+        padding-top: 80px;
+        .wrap-menu {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transform: translate3d(0px, -500vh, 0px);
+            &.active {
+                transform: scale(1, 1) translate3d(0px, 0px, 0px);
+                opacity: 1;
+            }
+
+        }
+        .wrap_home {
+            position: absolute;
+            width: 100%;
+            overflow-x: hidden;
+            .content_list {
+                // padding-bottom: 20px;
+                padding-bottom: 65px;
+                .content_list_info {
+                    height: auto;
+                    align-items: center;
+                    width: calc(100% - 15%);
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: relative;
+
+                }
+
+                .list_top {
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    width: calc(100% - 15%);
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: relative;
+                    .list_top_title {
+                        span {
+                            font-weight: bold;
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .list_top_reflash {
+
+                        .list_top_reflash_a {
+                            position: absolute;
+                            float: right;
+                            right: 0;
+                            .list_top_reflash_img{
+                                width: 50%;
+                                float: right;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            // .content_more_btn {
+            //     height: 50px;
+            //     -webkit-box-align: center;
+            //     -ms-flex-align: center;
+            //     align-items: center;
+            //     width: calc(100% - 15%);
+            //     margin-left: auto;
+            //     margin-right: auto;
+            //     position: relative;
+            //     margin-bottom: 125px;
+            //     .more_btn {
+            //         position: relative;
+            //         display: block;
+            //         width: 100%;
+            //         height: 50px;
+            //         button {
+            //             position: relative;
+            //             display: block;
+            //             width: 100%;
+            //             height: 50px;
+            //             border: 0px;
+            //             outline: 0px;
+            //             border-radius: 5px;
+            //         }
+
+            //     }
+            // }
+
+
+            .content_search {
+                align-items: center;
+                width: 100%;
+                margin-left: auto;
+                margin-top: 13px;
+                position: relative;
+
+                .swiper-container1 {
+                    width: 100%;
+                    height: 196px;
+                    position: relative;
+                    list-style: none;
+                    padding: 0;
+                    z-index: 1;
+                    margin-bottom: 24px;
+                
+                    .swiper-slide {
+                        height: 100%;
+                        filter: drop-shadow(2px 2px 2.5px #C6D7E2);
+                        filter: drop-shadow(0px 8px 8px #0052843d);
+                        color:black;
+                        text-align: center;
+                        font-size: 1.8rem;
+                        background: #3B46E3;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &.slide_info_search {
+                            background: #fff;
+                        }
+                        &.slide_business_info {
+                            background: $skyblue;
+                        }
+                        &.slide_contact_info {
+                            background: $skyblue;
+                            .card_search {
+                                .card_title {
+                                    .title {
+                                        .sub_info {
+                                            top: 0px;
+                                            position: relative;
+                                            .txt {
+                                                width: 70%;
+                                            }
+                                            .info {
+                                                width: 40px;
+                                                height: 40px;
+                                                position: absolute;
+                                                right: 0px;
+                                                top: 0px;
+                                                display: inline-block;
+                                                margin-right: 15px;
+                                                .img_3 {
+                                                    img {
+                                                        width: 40px;
+                                                        height: 40px;
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.slide_temporary_storage {
+                            background: $skyblue;
+                            .card_search {
+                                .card_title {
+                                    .title {
+                                        .sub_info {
+                                            top: 0px;
+                                            position: relative;
+                                            .txt {
+                                                width: 70%;
+                                            }
+                                            .info {
+                                                width: 40px;
+                                                height: 40px;
+                                                position: absolute;
+                                                right: 0px;
+                                                top: 0px;
+                                                display: inline-block;
+                                                margin-right: 15px;
+                                                .img_3 {
+                                                    
+                                                    img {
+                                                        width: 40px;
+                                                        height: 40px;
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .card_btn {
+                                    // display: flex;
+                                    position: absolute;
+                                    background: $skyblue;
+                                    .center_btn {
+                                        text-decoration: none;
+                                        border-radius: 5px;
+                                        width: 48.5%;
+                                        position: relative;
+                                        display: inline-block;
+                                        .btn {
+                                            height: 100%;
+                                            margin: auto;
+                                        }
+                                        &:nth-child(1) {
+                                            float: left;
+                                            background: #43A1F9;
+                                            margin-right: 6px;
+                                        }
+                                        &:nth-child(2) {
+                                            background: #1AADF9;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        &.slide_user_temporary_storage {
+                            background: $skyblue;
+                            .card_search {
+                                .card_title {
+                                    .title {
+                                        .sub_info {
+                                            top: 0px;
+                                            position: relative;
+                                            .txt {
+                                                width: 100%;
+                                                span {
+                                                    &:nth-child(1) {
+                                                        margin-bottom: 3px;
+                                                    }
+                                                    &:nth-child(2) {
+                                                        font-size: 1.4rem;
+                                                        color: #FFFF00;
+                                                        font-weight: normal;
+                                                    }
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.slide_user_recently_created {
+                            background: $skyblue;
+                            .card_search {
+                                .card_title {
+                                    .title {
+                                        .sub_info {
+                                            top: 0px;
+                                            position: relative;
+                                            .txt {
+                                                width: 100%;
+                                                span {
+                                                    &:nth-child(1) {
+                                                        margin-bottom: 3px;
+                                                    }
+                                                    &:nth-child(2) {
+                                                        font-size: 1.4rem;
+                                                        color: #FFFF00;
+                                                        font-weight: normal;
+                                                    }
+                                                }
+                                            }
+                                            .info {
+                                                width: 80px;
+                                                height: 80px;
+                                                position: absolute;
+                                                right: 0px;
+                                                top: -17px;
+                                                display: inline-block;
+                                                .img_3 {
+                                                    
+                                                    img {
+                                                        width: 80px;
+                                                        height: 80px;
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .card_btn {
+                                    // display: flex;
+                                    position: absolute;
+                                    background: #1487F7;
+                                    .center_btn {
+                                        text-decoration: none;
+                                        border-radius: 5px;
+                                        width: 48.5%;
+                                        position: relative;
+                                        display: inline-block;
+                                        .btn {
+                                            height: 100%;
+                                            margin: auto;
+                                        }
+                                        &:nth-child(1) {
+                                            float: left;
+                                            background: #43A1F9;
+                                            margin-right: 6px;
+                                        }
+                                        &:nth-child(2) {
+                                            background: #1AADF9;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .card_search {
+                            height: 90%;
+                            width: 100%;
+                            padding: 20px 20px 0 20px;
+                            text-align: left;
+                            // display: inline-table;
+                            // display: table;
+
+                            .card_bottom {
+                                width: 100%;
+                                bottom: 0vh;
+                                background: #fff0;
+                                position: absolute;
+                                left: 0;
+                                display: flex;
+                                z-index: 1;
+
+
+                                .bottom_btn {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    position: relative;
+                                    width: 100%;
+
+                                    .detail_list {
+                                        z-index: -1;
+                                        overflow: auto;
+                                        width: 100%;
+                                        position: absolute;
+                                        height: 0vh;
+                                        bottom: 0;
+                                        background: #fff;
+                                        padding-bottom: 50px;
+                                        border-bottom-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        .detail_list_input {
+                                            width: calc(100% - 15%);
+                                            margin: auto;
+                                            top: 0px;
+                                            position: relative;
+                                            .detail_ {
+                                                position: relative;
+                                                width: 100%;
+                                                margin: 8px 0;
+                                                & ._select_info {
+                                                    appearance: none;
+                                                    background: url(../img/content/ic_card_02.png) no-repeat right / 20px;
+                                                    color: #B8B8B8;
+                                                    .default {
+                                                        display: none;
+                                                    }
+                                                }
+                                                &.detail_date {
+                                                    position: relative;
+                                                    display: flex;
+                                                    width: 100%;
+                                                    .detail_date_div {
+                                                        width: 47.5%;
+                                                        position: relative;
+                                                        display: inline-block;
+                                                        &:first-child {
+                                                            margin-right: 5%;
+                                                        }
+                                                        ._input_date {
+                                                            background: url(../img/content/ic_card_calendar.png) no-repeat right / 20px;
+                                                            color: #B8B8B8;
+                                                            font-size: 1.6rem;
+                                                            right: 0px;
+
+                                                            &[type="text"] {
+                                                                color: #000;
+                                                                padding: 16px 0 !important;
+                                                            }
+                                                            &::placeholder {
+                                                                color: #B8B8B8;
+                                                                font-size: 1.6rem;
+                                                            }
+                                                            &::-webkit-inner-spin-button,
+                                                            &::-webkit-calendar-picker-indicator {
+                                                                position: absolute;
+                                                                right: 0;
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                background: url(../img/content/ic_card_calendar.png) no-repeat right / 20px;
+                                                            }
+                                                            // &::-webkit-calendar-picker-indicator {
+                                                            //         background: transparent;
+                                                            //         bottom: 0;
+                                                            //         color: transparent;
+                                                            //         cursor: pointer;
+                                                            //         height: auto;
+                                                            //         left: 0;
+                                                            //         position: absolute;
+                                                            //         right: 0;
+                                                            //         top: 0;
+                                                            //         width: auto;
+                                                                
+                                                            // }
+                                                        }
+
+                                                    }
+                                                }
+                                                ._input {
+                                                    border-bottom: 1px solid #DEDEDE;
+                                                }
+                                                .detail_a {
+                                                    padding: 16px 0;
+                                                    position: absolute;
+                                                    right: 0;
+                                                    width: 2em;
+                                                    height: 2em;
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                    .btn_list {
+                                        position: absolute;
+                                        right: 0;
+                                        width: 100%;
+                                        height: 50px;
+                                        bottom: 0;
+                                        border-bottom-left-radius: 10px;
+                                        border-bottom-right-radius: 10px;
+                                        background: $skyblue;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-decoration: none;
+                                        span {
+                                            color: #fff;
+                                            font-size: 1.4rem;
+                                            line-height: 1.1;
+                                        }
+                                        img {
+                                            display: block;
+                                            width: 20px;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            .card_title {
+                                width: 100%;
+                                position: relative;
+                                .title {
+                                    .main {
+                                        width: 100%;
+                                        color: $skyblue;
+                                        font-size: 1.2rem;
+                                        position: relative;
+                                        display: block;
+                                        margin-bottom: 1.5px;
+                                        font-weight: bold;
+                                    }
+                                    .main2 {
+                                        width: 100%;
+                                        color: #A7CEFC;
+                                        font-size: 1.2rem;
+                                        position: relative;
+                                        display: block;
+                                        margin-bottom: 0.5%;
+                                        font-weight: bold;
+                                        text-indent: 0.4em;
+                                    }
+                                    .sub {
+                                        color: #000;
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                    }
+                                    .sub_info {
+                                        width: 100%;
+                                        position: relative;
+                                        top: -14px;
+                                        .txt {
+                                            display: inline-block;
+                                            width: 65%;
+                                            span {
+                                                display: block;
+                                                color: #fff;
+                                                font-size: 1.6rem;
+                                                text-indent: 0.3em;
+                                            }
+                                        }
+                                        .info {
+                                            display: inline-block;
+                                            width: 30%;
+                                            text-align: right;
+                                            span {
+                                                &.info_num {
+                                                    color: #FFFF00;
+                                                    font-size: 4.8rem;
+                                                }
+                                                &:nth-child(2) {
+                                                    color: #fff;
+                                                    font-size: 1.6rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            .card_btn {
+                                width: calc(100% - 40px);
+                                margin: 0px 20px 20px 20px;
+                                left: 0;
+                                bottom: 0;
+                                height: 50px;
+                                // position: fixed;
+                                position: absolute;
+                                z-index: 2;
+                                border-radius: 5px;
+                                background: #43A1F9;
+                                align-items: center;
+                                justify-content: center;
+                                .center_btn {
+                                    width: 100%;
+                                    height: 50px;
+                                    position: relative;
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    .btn {
+                                        position: relative;
+                                        right: 0;
+                                        height: 22px;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        img {
+                                            width: 20px;
+                                            display: block;
+                                            margin-top: 2px;
+                                               margin-right: 10px;
+                                        }
+                                        span {
+                                            font-size: 1.4rem;
+                                            color: #fff;
+                                            line-height: 1.1;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .card_content {
+                                width: 100%;
+                                margin-top: 9px;
+                                height: 50px;
+                                position: relative;
+                                display: flex;
+                                z-index: 2;
+
+                                .center_btn {
+                                    width: 100%;
+                                    background: #43A1F9;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    position: relative;
+                                    justify-content: center;
+                                    border-radius: 5px;
+                                    .btn {
+                                        position: absolute;
+                                        right: 0;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        img {
+                                            width: 20px;
+                                            display: block;
+                                            margin-top: 2px;
+                                            margin-right: 10px;
+                                        }
+                                        span {
+                                            font-size: 1.4rem;
+                                            color: #fff;
+                                            line-height: 1.1;
+                                        }
+                                    }
+                                        
+                                }
+
+                            }
+
+                                .card_input {
+                                    position: relative;
+                                    width: 100%;
+                                    .search_input {
+                                        -webkit-appearance: none;
+                                        -webkit-border-radius: 0;
+                                        width: 100%;
+                                        border: 0;
+                                        border-bottom: 2px solid black;
+                                        outline: 0;
+                                        color: #000000;
+                                        padding: 10px 0;
+                                        background: transparent;
+                                        font-size: 1.6rem;
+                                        font-family: 'notokr', sans-serif !important;
+                                        line-height: 1;
+                                        &::placeholder {
+                                            font-size: 1.6rem;
+                                            color: #bbb;
+                                        }
+
+                                    }
+                                    /* reset input */
+                                    .search_input{
+                                        &:required,&:invalid { box-shadow:none; }
+                                    }
+                                    a {
+                                        padding: 12px 0;
+                                        position: absolute;
+                                        right: 0;
+                                        width: 2em;
+                                        height: 2em;
+                                        img {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+        
+
+                            }
+
+                        }
+                    }
+                }
+
+
+                .swiper-container2 {
+                    width: 100%;
+                    height: 35px;
+                    overflow: hidden;
+                    position: relative;
+                    list-style: none;
+                    padding: 0;
+                    z-index: 0;
+                    margin-bottom: 5px;
+                    padding-left: 7.5%;
+                    .swiper-slide {
+                        text-align: center;                        
+                        background:#F0F0F5;
+                        width: auto;
+                        border-radius: 30px;
+                
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 12px;
+                        }
+                        span {
+                            font-size: 1.4rem;
+                            padding: 10px 12px 10px 5px;
+                        }
+
+                    }
+                }
+
+
+            }
+
+        }
+    
+
+
+    header {
+        z-index: 2;
+        position: absolute;
+        top: 24px;
+        width: 100%;
+        height: 56px;
+        .header_top {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            width: calc(100% - 15%);
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+
+            // transform: translate3d(0px, -20vh, 0px);
+            // display: none;
+            &[data-index] {
+                opacity: 0;
+                transform: translate3d(0px, -20vh, 0px);
+                display: none;
+
+            }
+
+            &.active {
+                display: flex;
+                opacity: 1;
+                transform: translate3d(0px, 0px, 0px);
+            }
+
+
+            .header_left {
+                width: 65%;
+                .header_top_img {
+                    width: 90px;
+                }
+                .header_title {
+                    color: #fff;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+                .header_title2 {
+                    color: #fff;
+                    font-size: 2.0rem;
+                }
+            }
+
+            .header_right {
+                width: 35%;
+                .header_a_alert {
+                    margin-left: auto;
+                    position: relative;
+                    right: 0;
+                    float: right;
+                    .header_alert {
+                         width: 2.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer {
+        // position: relative;
+        position: fixed;
+        // background: #2699FB;
+        background: #ffffff;
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        // height: 7.6vh;
+        height: 55px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        // filter : drop-shadow(0px 5px 10px black);
+        // filter : drop-shadow(0px 1.5px 3px black);
+        filter: drop-shadow(0px 1px 20px #0000001a);
+
+        .footer_bottom {
+            width: 100%;
+            height: 100%;
+            .footer_menu {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                // width: calc(100% - 15%);
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+
+                .footer_menu_list {
+                    width: calc(100%/5);
+                    position: relative;
+                    height: 40%;
+                    .menu_a {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        img {
+                            &.selected {
+                                animation: opacity_in 0.3s ease-in-out;
+                                opacity: 1;
+                            }
+                            width: 20px;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            opacity: 0;
+                            animation: opacity_out 0.3s ease-in-out;
+                            // display: flex;
+                        }
+                    }
+                }
+
+                .footer_menu_list_center {
+                    height: 100%;
+                    
+                    .menu {
+                        text-align: center;
+                        vertical-align: middle;
+                        display: inline-block;
+                        // margin-top: -20%;
+                        bottom: 15px;
+                        position: relative;
+                        width: 50px;
+                        height: 50px;
+                        filter: drop-shadow(0px 5px 15px #0052843d);
+                        .menu-open {
+                            display: none;
+                        }
+
+                        .menu-open-button {
+                            display: block;
+                            background: linear-gradient(45deg, #6439eb, #1588f7);
+                            z-index: 3;
+                            width: 100%;
+                            padding-top: 100%;
+                            border-radius:100%;
+                            color:white;
+                            text-align:center;
+                            transform: scale(1, 1) translate3d(0, 0, 0);
+                            transition-duration:400ms;
+                            transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
+                            transition:transform ease-out 200ms;
+                            position: relative;
+                        }
+
+                        .menu-item {
+                            text-decoration: none;
+                            // background: #ff4081;
+                            // background: #00B8C6;
+                            // background: linear-gradient(45deg, #4A2DE3, #1686F7);
+                            background: linear-gradient(45deg, #643AEB, #1488F7);
+                            border-radius:100%;
+                            width: 50px;
+                            height: 50px;
+                            display: block;
+                            // height:50px;
+                            // width: 100%;
+                            // padding-top: calc(100% - 21px);
+                            // margin-left: -50%;
+                            position:absolute;
+                            top:0px;
+                            color:white;
+                            text-align:center;
+                            // line-height:80px;
+                            transition:transform ease-out 200ms;
+
+
+                        }
+
+                        .menu-open:checked~.menu-item{
+                            transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
+                            
+                        }
+
+                        .menu-open:checked ~ .fa1 {
+                            transition-duration: 240ms;
+                            // transform: translate3d(-115%, -90%, 0);
+                            transform: translate3d(-105%, -80%, 0);
+                        }
+                        .menu-open:checked ~ .fa2 {
+                            transition-duration: 320ms;
+                            transform: translate3d(0px, -130%, 0);
+                            // transform: translate3d(0px, -165%, 0);
+
+                        }
+                        .menu-open:checked ~ .fa3 {
+                            transition-duration: 480ms;
+                            transform: translate3d(105%, -80%, 0);
+                            // transform: translate3d(115%, -90%, 0);
+                        }
+
+                        .fa {
+                            font-style: normal;
+                            // line-height: 14vw;
+                            font-size: 1.5rem;
+                        }
+                        .fa-write {
+                            &:before {
+                                content:" ";
+                            }
+                            img {
+                                // top: 0.5vh;
+                                top: 15px;
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                position: relative;
+                            }
+                        }
+                        
+                        .fa-user {
+                            &:before {
+                                content:" ";
+                            }
+                            img {
+                                top: 15px;
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                position: relative;
+                            }
+                        // content: "2";
+                        }
+                        .fa-folder {
+                            &:before {
+                                content:" ";
+                            }
+                            img {
+                                top: 15px;
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                position: relative;
+                            }
+                        }
+
+                        .hamburger{
+                            $width:20px;
+                            $height:2px;
+                            width:$width;
+                            height:$height;
+                            background:white;
+                            display:block;
+                            position:absolute;
+                            top:50%;
+                            left:50%;
+                            margin-left:-$width/2;
+                            margin-top:-$height/2;
+                            transition:transform 200ms;
+                          }
+                          $hamburger-spacing:8px;
+                          .hamburger-1{
+                            transform:translate3d(0,0px,0)
+                            rotate(90deg);
+                          }
+                          .hamburger-2{
+                            transform:translate3d(0,0,0);
+                          }
+                          .menu-open:checked+.menu-open-button{
+                            background: #005284;
+                            .hamburger-1{
+                              transform:translate3d(0,0,0) rotate(45deg); 
+                            }
+                            .hamburger-2{
+                                transform:translate3d(0,0,0) rotate(-45deg); 
+                            }
+                          }
+                    }
+                }
+
+            }
+        }
+    }    
+}
+
+
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
+// @media all and (min-width:768px) and (max-width:1023px) { 
+//     .wrap {
+//     }
+// }
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+// @media all and (min-width:768px) and (max-width:1023px) { 
+//     .wrap {
+//     }
+// }
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+// @media all and (min-width:480px) and (max-width:767px) { 
+//     .wrap {
+//     }
+// }
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+// @media all and (max-width:479px) { 
+//     .wrap {
+//     }
+// }
+
+// @media only screen and (orientation: portrait) {
+// @media only screen and (orientation:landscape) {    // 가로모드
+// }

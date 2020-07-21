@@ -1,0 +1,2436 @@
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="mobile/css/default.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" target-densitydpi=device-dpi>
+
+    <script type="text/javascript" src="mobile/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="mobile/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="mobile/js/Hammer.min.js"></script>
+    <script type="text/javascript" src="mobile/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="mobile/js/swiper.js"></script>
+    <script type="text/javascript" src="mobile/js/common.js"></script>
+
+    <title>CRM</title>
+
+    <style>
+
+    </style>
+  </head>
+  <body>
+  <div class="root" oncontextmenu="return false;">
+    <div class="bg_"></div>
+
+    <!-- home search window -->
+    <div class="search_input_div">
+      <div class="detail_search">
+        <div class="detail">
+          <div class="search_content_list ui-widget">
+          <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front">
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>(주)<span>제철</span>세라믹</div>
+                  <div>4H021</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>포항<span>제철</span>소</div>
+                  <div>PPPPPP</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>KG동부<span>제철</span>(주)</div>
+                  <div>NGD99</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>현대<span>제철</span>주식회사</div>
+                  <div>JD051</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>(주)<span>제철</span>공무</div>
+                  <div>CCDW4</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>(주)<span>제철</span>산업</div>
+                  <div>GCK61</div>
+                </a>
+              </div>
+            </li>
+
+
+           
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- home search window -->
+
+    <!-- saerch search window -->
+    <div class="search_search_input_div">
+      <div class="detail_search">
+        <div class="detail">
+          <div class="search_content_list ui-widget">
+          <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front">
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>(주)<span>제철</span>세라믹</div>
+                  <div>4H021</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>포항<span>제철</span>소</div>
+                  <div>PPPPPP</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>KG동부<span>제철</span>(주)</div>
+                  <div>NGD99</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>현대<span>제철</span>주식회사</div>
+                  <div>JD051</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>(주)<span>제철</span>공무</div>
+                  <div>CCDW4</div>
+                </a>
+              </div>
+            </li>
+            
+            <li class="ui-menu-item">
+              <div class="ui_list">
+                <a href="javascript:window_search_result_on();">
+                  <div>(주)<span>제철</span>산업</div>
+                  <div>GCK61</div>
+                </a>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- saerch search window -->
+
+    <!-- dim user search -->
+    <div class="dim_full">
+      <div class="dim"></div>
+      <div class="user_search">
+        <div class="user">
+          <div class="header_user">
+
+            <div class="header_user_left">
+              <div class="title">등록자 선택</div>
+            </div>
+            <div class="header_user_right">
+              <a href="javascript:dim_delete();" class="exit">
+                <img src="mobile/img/content/ic_pop_close.png" />
+              </a>
+            </div>
+          </div>
+
+          <div class="content_user">
+            <div class="user_input_box">
+              <input type="text" name="user_input" class="user_input" placeholder="이름, 직번, 소속 입력">
+              <a href="javascript:goCode()" class="user_a">
+                <img src="mobile/img/content/ic_card_04.png">
+              </a>
+            </div>
+
+
+            <div class="user_btn_list_box">
+              <button class="user_btn">
+                
+                <img src="mobile/img/content/ic_pop_add.png">
+                
+                <span>등록자를 선택해주세요</span>
+              </button>
+            </div>
+
+            <div class="user_search_list">
+              <div class="user_list_result">
+                <a href="javascript:alert('asdasd')" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>김철강</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD401594</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>권철서</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD405402</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>박철북</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049501</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>이제철</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049519</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>박철도</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD040523</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>김철도</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD067777</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>이제철</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049519</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>이제철</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049519</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <a href="#" class="footer_user">
+          <span style="color: #fff;opacity: 0.5;">완료</span>
+        </a>
+      </div>
+    </div>
+    <!-- dim user search 1 -->
+
+    <!-- dim user search 2-->
+    <!-- <div class="dim_full">
+      <div class="dim"></div>
+      <div class="user_search">
+        <div class="user">
+          <div class="header_user">
+
+            <div class="header_user_left">
+              <div class="title">등록자 선택</div>
+              <span>5</span>
+
+            </div>
+            <div class="header_user_right">
+              <a href="javascript:dim_delete();" class="exit">
+                <img src="mobile/img/content/ic_pop_close.png" />
+              </a>
+            </div>
+          </div>
+
+          <div class="content_user">
+            <div class="user_input_box">
+              <input type="text" name="user_input" class="user_input" placeholder="이름, 직번, 소속 입력">
+              <a href="javascript:goCode()" class="user_a">
+                <img src="mobile/img/content/ic_card_04.png">
+              </a>
+            </div>
+
+
+            <div class="user_btn_list_box">
+              
+              <div class="user_result_list">
+                <div class="user_result">
+                  <span>김철강</span>
+                  <a href="#">
+                    <img src="mobile/img/content/ic_pop_cancel.png">
+                  </a>
+                </div>
+                <div class="user_result">
+                  <span>김철강</span>
+                  <a href="#">
+                    <img src="mobile/img/content/ic_pop_cancel.png">
+                  </a>
+                </div>
+                <div class="user_result">
+                  <span>김철강</span>
+                  <a href="#">
+                    <img src="mobile/img/content/ic_pop_cancel.png">
+                  </a>
+                </div>
+                <div class="user_result">
+                  <span>김철강</span>
+                  <a href="#">
+                    <img src="mobile/img/content/ic_pop_cancel.png">
+                  </a>
+                </div>
+                <div class="user_result">
+                  <span>김철강</span>
+                  <a href="#">
+                    <img src="mobile/img/content/ic_pop_cancel.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="user_search_list">
+              <div class="user_list_result">
+                <a href="javascript:alert('asdasd')" class="user_list_a">
+                  <div class="user_list_left">
+                    <span style="color:#007EFF;">김철강</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD401594</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>권철서</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD405402</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>박철북</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049501</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>이제철</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049519</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>박철도</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD040523</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>김철도</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD067777</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>이제철</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049519</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="user_list_result">
+                <a href="#" class="user_list_a">
+                  <div class="user_list_left">
+                    <span>이제철</span>
+                  </div>
+                  <div class="user_list_right">
+                    <div class="user_info">
+                      <span>포스코 ICT</span>
+                      <span class="bar">|</span>
+                      <span>PD049519</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <a href="#" class="footer_user">
+          <span>완료</span>
+        </a>
+      </div>
+    </div> -->
+    <!-- dim user search -->
+
+    <!-- notice page -->
+    <div class="notice">
+
+      <div class="notice_header">
+        <div class="notice_header_top">
+          <div class="notice_header_top notice_header_left">
+            <a href="javascript:notice_page_off()" class="back">
+              <img src="mobile/img/gnb/ic_prev.png">
+            </a>
+            <span class="txt">알림</span>
+            <span class="counter">7</span>
+          </div>
+          <div class="notice_header_top notice_header_right">
+            <a href="#" class="option">
+              <img src="mobile/img/gnb/ic_menu.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice_wrap">
+        <div class="notice_list">
+          <div class="content_list">  
+            <div class="content_list_info">
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>출장정보미등록</span></div>
+                      <div class="title"><span>미등록 출장정보가 3건 있습니다</span></div>
+                      <div class="sub">
+                        <span>삼성건설 접촉정보 등록 외 2건</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>접촉정보</span></div>
+                      <div class="title"><span>보고대상 박제철님께서 확인하셨습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>즐겨찾기</span></div>
+                      <div class="title"><span>이영업님께서 즐겨찾기 하였습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>댓글</span></div>
+                      <div class="title"><span>이영업님께서 댓글을 달았습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>즐겨찾기</span></div>
+                      <div class="title"><span>박철강님께서 즐겨찾기 하였습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>메일</span></div>
+                      <div class="title"><span>권금속님께서 메일을 보냈습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>출장정보미등록</span></div>
+                      <div class="title"><span>미등록 출장정보가 3건 있습니다</span></div>
+                      <div class="sub">
+                        <span>삼성건설 접촉정보 등록 외 2건</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>접촉정보</span></div>
+                      <div class="title"><span>보고대상 박제철님께서 확인하셨습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>즐겨찾기</span></div>
+                      <div class="title"><span>이영업님께서 즐겨찾기 하였습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>댓글</span></div>
+                      <div class="title"><span>이영업님께서 댓글을 달았습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>즐겨찾기</span></div>
+                      <div class="title"><span>박철강님께서 즐겨찾기 하였습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="content_list_info_list">
+                <a href="#" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="info"><span>메일</span></div>
+                      <div class="title"><span>권금속님께서 메일을 보냈습니다</span></div>
+                      <div class="sub">
+                        <span>나의 작성글 : 현대건설 고객내방 접촉정보 등록</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date">
+                      <span>2020.05.21</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notice page -->
+
+    <!-- setting page -->
+    <div class="setting">
+
+      <div class="setting_header">
+        <div class="setting_header_top">
+          <div class="setting_header_top setting_header_left">
+            <a href="javascript:setting_page_off()" class="back">
+              <img src="mobile/img/gnb/ic_prev.png">
+            </a>
+            <span class="txt">설정</span>
+          </div>
+          <div class="setting_header_top setting_header_right">
+            <a href="#" class="option">
+              <img src="mobile/img/gnb/ic_menu.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="setting_wrap">
+        <div class="setting_menu_list">
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          <div class="setting_menu">
+            <a href="#">
+              <span>메뉴</span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- setting page -->
+
+    <!-- window_search page -->
+    <div class="window_search">
+
+      <div class="window_search_header">
+        <div class="window_search_header_top">
+          <div class="window_search_header_left">
+            <a href="javascript:window_search_off()" class="back">
+              <img src="mobile/img/gnb/ic_prev.png">
+            </a>
+          </div>
+          <div class="window_search_header_right">
+            <div class="txt">
+              <input type="text" class="window_search_input" placeholder="고객사명, 코드 입력">
+              <a href="#">
+                <img src="mobile/img/content/ic_card_04.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="window_search_wrap">
+        <div class="window_search_list">
+          <div class="search_top">
+            <div class="search_top search_top_left">
+              <div class="left">
+                <span>검색 결과</span>
+              </div>
+            </div>
+            <div class="search_top search_top_right">
+              <div class="right">
+                <div class="set">
+                  <span>검색 설정</span>
+                </div>
+                
+                <div class="search_setting_img off">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search_list">
+            <div class="list">
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>(주)제철세라믹</span>
+                    <span>4H021</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>포항제철소</span>
+                    <span>PPPPPP</span>
+                  </a>
+                  </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>KG동부제철(주)</span>
+                    <span>NGD99</span>
+                  </a>
+                  </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>현대제철주식회사</span>
+                    <span>JD051</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>(주)제철공무</span>
+                    <span>CCDW4</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>(주)제철산업</span>
+                    <span>GCK61</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>광양제철소</span>
+                    <span>KKKKKK</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>(주)제철세라믹</span>
+                    <span>4H021</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>포항제철소</span>
+                    <span>PPPPPP</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>KG동부제철(주)</span>
+                    <span>NGD99</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu_list">
+                <div class="menu">
+                  <a href="javascript:window_search_result_on();">
+                    <span>(주)제철세라믹</span>
+                    <span>4H021</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- window_search page -->
+
+  <!-- window_search_result page -->
+  <div class="window_search_result">
+
+    <div class="window_search_result_header">
+      <div class="window_search_result_header_top">
+        <div class="window_search_result_header_top window_search_result_header_left">
+          <a href="javascript:window_search_result_off()" class="back">
+            <img src="mobile/img/gnb/ic_prev.png">
+          </a>
+          <span class="txt">검색결과</span>
+          <span class="counter">6</span>
+        </div>
+        <div class="window_search_result_header_top window_search_result_header_right">
+          <a href="#" class="option">
+            <img src="mobile/img/gnb/ic_menu.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="window_search_result_wrap">
+      <div class="window_search_result_list">
+        <div class="content_list">  
+          <div class="content_list_info">
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)제철공무</span></div>
+                    <div class="title"><span>제철공무 2기 판매협의</span></div>
+                    <div class="sub">
+                      <span>이은경</span>
+                      <span class="bar">|</span>
+                      <span>수요개발</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)제철공무</span></div>
+                    <div class="title"><span>제철공무 면담결과 보고</span></div>
+                    <div class="sub">
+                      <span>김준희</span>
+                      <span class="bar">|</span>
+                      <span>시황</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)제철공무</span></div>
+                    <div class="title"><span>제철공무 업무 인수 인계 협의</span></div>
+                    <div class="sub">
+                      <span>최은용</span>
+                      <span class="bar">|</span>
+                      <span>가격/물량</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)제철공무</span></div>
+                    <div class="title"><span>제철공무 3분기 PJT 발주협의</span></div>
+                    <div class="sub">
+                      <span>김진황</span>
+                      <span class="bar">|</span>
+                      <span>수요개발</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)제철공무</span></div>
+                    <div class="title"><span>2020년 5월 정기미팅</span></div>
+                    <div class="sub">
+                      <span>김한주</span>
+                      <span class="bar">|</span>
+                      <span>시황</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)제철공무</span></div>
+                    <div class="title"><span>제철공무 `20.5~7월 시황</span></div>
+                    <div class="sub">
+                      <span>윤장군</span>
+                      <span class="bar">|</span>
+                      <span>가격/물량</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- window_search_result page -->
+
+  <!-- page_result page -->
+  <div class="page_result">
+
+    <div class="page_result_header">
+      <div class="page_result_header_top">
+        <div class="page_result_header_top page_result_header_left">
+          <a href="javascript:page_result_off()" class="back">
+            <img src="mobile/img/gnb/ic_prev.png">
+          </a>
+          <span class="txt">즐겨찾기</span>
+          <span class="counter">8</span>
+        </div>
+        <div class="page_result_header_top page_result_header_right">
+          <a href="#" class="option">
+            <img src="mobile/img/gnb/ic_menu.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page_result_wrap">
+      <div class="page_result_list">
+        <div class="content_list">  
+          <div class="content_list_info">
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)경동나비엔</span></div>
+                    <div class="title"><span>경동나비엔 2분기 판매협의</span></div>
+                    <div class="sub">
+                      <span>이은경</span>
+                      <span class="bar">|</span>
+                      <span>수요개발</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)티엠씨</span></div>
+                    <div class="title"><span>TMC 면담결과 보고</span></div>
+                    <div class="sub">
+                      <span>김준희</span>
+                      <span class="bar">|</span>
+                      <span>시황</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>STEMCOR</span></div>
+                    <div class="title"><span>Stemcor 업무 인수 인계 협의</span></div>
+                    <div class="sub">
+                      <span>최은용</span>
+                      <span class="bar">|</span>
+                      <span>가격/물량</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>대림씨엔에스(주)</span></div>
+                    <div class="title"><span>대림씨엔에스 3분기 PJT 발주 협의</span></div>
+                    <div class="sub">
+                      <span>김진황</span>
+                      <span class="bar">|</span>
+                      <span>수요개발</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>한화디펜스주식회사</span></div>
+                    <div class="title"><span>2020년 5월 정기미팅</span></div>
+                    <div class="sub">
+                      <span>김한주</span>
+                      <span class="bar">|</span>
+                      <span>시황</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="content_list_info_list">
+              <a href="#" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="info"><span>(주)에스제이엠</span></div>
+                    <div class="title"><span>SJM `20.5~7월 시황</span></div>
+                    <div class="sub">
+                      <span>윤장군</span>
+                      <span class="bar">|</span>
+                      <span>가격/물량</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.21</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- page_result page -->
+
+    <header>
+      <div class="header_top header_home active" data-index="1">
+        <div class="header_top header_left">
+          <div class="header_top_img"><img src="mobile/img/gnb/CRM_logo.png"/></div>
+        </div>
+        <div class="header_top header_right">
+          <a href="javascript:notice_page_on()" class="header_a_alert">
+            <img src="mobile/img/gnb/ic_alarm.png" class="header_alert">
+          </a>
+        </div>
+      </div>
+
+      <div class="header_top header_search" data-index="2">
+        <div class="header_top header_left">
+          <span class="header_title">접촉정보조회</span>
+        </div>
+        <div class="header_top header_right">
+          <a href="javascript:notice_page_on()" class="header_a_alert">
+            <img src="mobile/img/gnb/ic_alarm.png" class="header_alert">
+          </a>
+        </div>
+      </div>
+
+      <div class="header_top header_page" data-index="3">
+        <div class="header_top header_left">
+          <span class="header_title">즐겨찾기</span>
+        </div>
+        <div class="header_top header_right">
+          <a href="javascript:notice_page_on()" class="header_a_alert page_update_a">
+            <img src="mobile/img/gnb/ic_alarm.png" class="header_alert page_update_btn">
+          </a>
+        </div>
+      </div>
+
+      <div class="header_top header_my" data-index="4">
+        <div class="header_top header_left">
+          <span class="header_title">더보기</span>
+        </div>
+        <div class="header_top header_right">
+          <a href="javascript:setting_page_on()" class="header_a_alert">
+            <img src="mobile/img/gnb/ic_more_setting.png" class="header_alert">
+          </a>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="wrap">
+      <div class="wrap_home wrap-menu active" data-index="1">
+
+        <div class="content_search">
+
+          <div class="swiper-container1">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide slide_info_search slide_1">
+                <div class="card_search">
+
+                  <div class="card_title">
+                    <div class="title">
+                      <span class="main">접촉정보조회</span>
+                      <span class="sub">원하시는 접촉정보를 조회해보세요</span>
+                    </div>
+                  </div>
+
+                  <div class="card_content">
+                    <div class="card_input">
+                      <input type="text" name="search_input" class="search_input" placeholder="고객사명, 코드 입력"/>
+                      <a href="javascript:window_search_on();" class="search_a">
+                        <img src="mobile/img/content/ic_search.png">
+                      </a>
+                    </div>
+
+                  </div>
+                  <div class="card_bottom">
+                    <div class="bottom_btn">
+
+                      <div class="detail_list">
+
+                        <div class="detail_list_input">
+
+                          <div class="detail_ detail_date">
+                            <div class="detail_date_div">
+                              <input type="text" name="start_date_input" class="_input _input_date _input_date_home ui-autocomplete-input" placeholder="시작일 선택" onfocus="(this.type='date')" onblur="(this.type='text')" min="1900-01-01" max="2100-12-31">
+                            </div>
+                            <div class="detail_date_div">
+                              <input type="text" name="end_date_input" class="_input _input_date _input_date_home ui-autocomplete-input" placeholder="종료일 선택" onfocus="(this.type='date')" onblur="(this.type='text')" min="1900-01-01" max="2100-12-31">
+                            </div>
+                          </div>
+
+                          <div class="detail_">
+                            <select class="_input _select_info">
+                              <option value="" class="default" selected>정보유형 선택</option>
+                              <option value="1">가격/물량</option>
+                              <option value="2">품질</option>
+                              <option value="3">납기/물류</option>
+                              <option value="4">수요개발</option>
+                              <option value="5">솔루션</option>
+                              <option value="6">시황</option>
+                              <option value="7">기타</option>
+                            </select>
+                          </div>
+
+                          <div class="detail_">
+                            <input type="text" name="keyword_input" class="_input keyword_input ui-autocomplete-input" placeholder="키워드 입력" autocomplete="off">
+                            <a href="#" class="detail_a">
+                              <img src="mobile/img/content/ic_card_keyword.png">
+                            </a>
+                          </div>
+
+                          <div class="detail_" onclick="javascript:popup_user();">
+                            <input type="text" name="user_input" class="_input user_input ui-autocomplete-input" placeholder="등록자 선택" autocomplete="off" readonly>
+                            <a class="detail_a">
+                              <img src="mobile/img/content/ic_card_04.png">
+                            </a>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <a href="javascript:detail_list();" class="btn_list search_a">  
+                        <img src="mobile/img/content/ic_detail.png">
+                        <span>상세검색설정</span>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+                
+
+              </div>
+
+
+              <div class="swiper-slide slide_business_info slide_2">
+                <div class="card_search">
+                  <div class="card_title">
+                    <div class="title">
+                      <span class="main2">출장정보미등록</span>
+                      <div class="sub_info">
+                        <div class="txt">
+                          <span>등록되지 않은 </span>
+                          <span>출장정보가 있습니다.</span>
+                        </div>
+                        <div class="info">
+                          <span class="info_num counter">7</span>
+                          <span>건</span>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card_btn">
+                    <div class="center_btn">
+                      <div class="btn">
+                        <img src="mobile/img/content/ic_card_plus.png"/>
+                        <span>출장정보등록</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide slide_contact_info slide_3">
+                <div class="card_search">
+
+                  <div class="card_title">
+                    <div class="title">
+                      <span class="main2">접촉정보미등록</span>
+                      <div class="sub_info">
+                        <div class="txt">
+                          <span>새로운 접촉등록정보를 </span>
+                            <span>등록해보세요</span>
+                        </div>
+                        <div class="info">
+                          <div class="img_3">
+                            <img src="mobile/img/content/ic_card_03.png" />
+                          </div>
+                          
+                        </div>
+  
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="card_btn">
+                    <div class="center_btn">
+                      <div class="btn">
+                        <img src="mobile/img/content/ic_card_plus.png"/>
+                        <span>접촉정보등록</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide slide_temporary_storage slide_4">
+                <div class="card_search">
+
+                  <div class="card_title">
+                    <div class="title">
+                      <span class="main2">임시저장한 글</span>
+                      <div class="sub_info">
+                        <div class="txt">
+                          <span>임시저장된 글이 있습니다 </span>
+                            <span>확인해보세요</span>
+                        </div>
+                        <div class="info">
+                          <div class="img_3">
+                            <img src="mobile/img/content/main_ic_card_04.png" />
+                          </div>
+                          
+                        </div>
+  
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="card_btn">
+                    <a href="#"  class="center_btn">
+                      <div class="btn">
+                        <span>목록보기</span>
+                      </div>
+                    </a>
+                    <a href="#"  class="center_btn">
+                      <div class="btn">
+                        <span>마지막 임시저장</span>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide slide_user_temporary_storage slide_5">
+                <div class="card_search">
+
+                  <div class="card_title">
+                    <div class="title">
+                      <span class="main2">임시저장한 글</span>
+                      <div class="sub_info">
+                        <div class="txt">
+                          <span>포스코건설 3분기 PJT 발주협의</span>
+                            <span>2020.05.23 15:10</span>
+                        </div>
+  
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="card_btn">
+                    <div class="center_btn">
+                      <div class="btn">
+                        <img src="mobile/img/content/ic_arrow.png"/>
+                        <span>이어서 작성하기</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide slide_user_recently_created slide_6">
+                <div class="card_search">
+
+                  <div class="card_title">
+                    <div class="title">
+                      <span class="main2">최근작성한 글</span>
+                      <div class="sub_info">
+                        <div class="txt">
+                          <span>대림씨엔에스 3분기 PJT 발주협의</span>
+                            <span>2020.05.20 10:30</span>
+                        </div> 
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="card_btn">
+                    <a href="#"  class="center_btn">
+                      <div class="btn">
+                        <span>상세보기</span>
+                      </div>
+                    </a>
+                    <a href="#"  class="center_btn">
+                      <div class="btn">
+                        <span>수정하기</span>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-container2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_01.png" /><span>포항</span></div>
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_02.png" /><span>4H021</span></div>
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_01.png" /><span>광양건설</span></div>
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_02.png" /><span>CDDH</span></div>
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_01.png" /><span>포항</span></div>
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_02.png" /><span>4H021</span></div>
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_01.png" /><span>광양건설</span></div>
+              <div class="swiper-slide"><img src="mobile/img/content/ic_key_02.png" /><span>CDDH</span></div>
+
+            </div>
+          </div>
+
+        </div>      
+
+
+        <div class="content_list">
+          <div class="list_top list_top_underline">
+            <div class="list_top list_top_title">
+              <span>최근 그룹 정보</span>
+            </div>
+            <div class="list_top list_top_reflash">
+              <a href="#" class="list_top_reflash_a">
+                <img src="mobile/img/content/ic_refresh.png" class="list_top_reflash_img" />
+              </a>
+            </div>
+          </div>
+
+
+          <div class="content_list_info">
+
+            <div class="content_list_info_list">
+              <a href="view.html" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="company"><span>(주)경동나비엔</span></div>
+                    <div class="title"><span>경동나비엔 2분기 판매협의</span></div>
+                    <div class="info">
+                      <span>이은경</span><span class="bar">|</span><span>수요개발</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date">
+                    <span>2020.05.25</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="content_list_info_list disable">
+              <a href="view.html" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="company"><span>(주)티엠씨</span></div>
+                    <div class="title"><span>TMC 면담결과 보고</span></div>
+                    <div class="info">
+                      <span>김준희</span><span class="bar">|</span><span>시황</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date"><span>2020.05.21</span></div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="content_list_info_list">
+              <a href="view.html" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="company"><span>STEMCOR</span></div>
+                    <div class="title"><span>Stemcor 업무 인수 인계 협의</span></div>
+                    <div class="info">
+                      <span>최은영</span><span class="bar">|</span><span>가격/물량</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date"><span>2020.05.21</span></div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="content_list_info_list">
+              <a href="view.html" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="company"><span>대림씨엔에스(주)</span></div>
+                    <div class="title"><span>대림씨엔에스 3분기 PJT 발주협의</span></div>
+                    <div class="info">
+                      <span>김진황</span><span class="bar">|</span><span>수요개발</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date"><span>2020.05.25</span></div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="content_list_info_list">
+              <a href="view.html" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="company"><span>한화디펜스주식회사</span></div>
+                    <div class="title"><span>2020년 5월 정기미팅</span></div>
+                    <div class="info">
+                      <span>김한주</span><span class="bar">|</span><span>시황</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date"><span>2020.05.25</span></div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="content_list_info_list">
+              <a href="view.html" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="company"><span>(주)에스제이엠</span></div>
+                    <div class="title"><span>SJM `20.5~7월 시황</span></div>
+                    <div class="info">
+                      <span>윤장군</span><span class="bar">|</span><span>가격/물량</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date"><span>2020.05.21</span></div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="content_list_info_list">
+              <a href="view.html" class="content_list_left_a">
+                <div class="content_list_left">
+                  <div class="content_left">
+                    <div class="company"><span>(주)포스코건설</span></div>
+                    <div class="title"><span>포스코건설 면담결과 보고</span></div>
+                    <div class="info">
+                      <span>최은용</span><span class="bar">|</span><span>가격/물량</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_list_right">
+                  <div class="date"><span>2020.05.25</span></div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          
+
+        </div>
+
+        <!-- <div class="content_more_btn">
+          <div class="more_btn">
+            <button>더보기</button>
+          </div>
+        </div> -->
+
+
+      </div>
+
+
+      <div class="wrap_search wrap-menu" data-index="2">
+        <div class="search_content">
+          <div class="search_top">
+
+
+            <div class="search_top_input">
+              <input type="text" class="search_input" class="search_input ui-autocomplete-input" placeholder="고객사명, 코드 입력">
+              <a href="javascript:window_search_on();">
+                <img src="mobile/img/content/ic_search_dis.png">
+              </a>
+            </div>
+
+            <div class="search_top_btn">
+              
+              <div class="search_top_btn_detail">
+                <div class="detail_list">
+
+                  <div class="detail_list_input">
+
+                    <div class="detail_ detail_date">
+                      <div class="detail_date_div">
+                        <input type="text" name="start_date_input" class="_input _input_date _input_date_search ui-autocomplete-input" placeholder="시작일 선택" onfocus="(this.type='date')" onblur="(this.type='text')" min="1900-01-01" max="2100-12-31">
+                      </div>
+                      <div class="detail_date_div">
+                        <input type="text" name="end_date_input" class="_input _input_date _input_date_search ui-autocomplete-input" placeholder="종료일 선택" onfocus="(this.type='date')" onblur="(this.type='text')" min="1900-01-01" max="2100-12-31">
+                      </div>
+                    </div>
+
+                    <div class="detail_">
+                      <select class="_input _select_info">
+                        <option value="" class="default" selected="">정보유형 선택</option>
+                        <option value="1">가격/물량</option>
+                        <option value="2">품질</option>
+                        <option value="3">납기/물류</option>
+                        <option value="4">수요개발</option>
+                        <option value="5">솔루션</option>
+                        <option value="6">시황</option>
+                        <option value="7">기타</option>
+                      </select>
+                    </div>
+
+                    <div class="detail_">
+                      <input type="text" name="keyword_input" class="_input keyword_input ui-autocomplete-input" placeholder="키워드 입력" autocomplete="off">
+                      <a href="#" class="detail_a">
+                        <img src="mobile/img/content/ic_card_03_w.png">
+                      </a>
+                    </div>
+
+                    <div class="detail_" onclick="javascript:popup_user();">
+                      <input type="text" name="user_input" class="_input user_input ui-autocomplete-input" placeholder="등록자 선택" autocomplete="off" readonly>
+                      <a href="#" class="detail_a">
+                        <img src="mobile/img/content/ic_card_04_w.png">
+                      </a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <a href="javascript:detail_list2();" class="btn_list">
+                <img src="mobile/img/content/ic_detail.png">
+                <span>상세검색설정</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="touch_list_swiper"></div>
+          <div class="content_list">
+            <!-- <div class="touch_list_swiper"></div> -->
+            <div class="list_top_info_top list_top_underline list_swiper">
+              <div class="list_top_info_top list_top_title">
+                <span>최근 접촉 정보</span>
+              </div>
+              <div class="list_top_info_top list_top_reflash">
+                <a href="#" class="list_top_reflash_a">
+                  <img src="mobile/img/content/ic_refresh.png" class="list_top_reflash_img">
+                </a>
+              </div>
+            </div>
+            <div class="content_list_info">
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>(주)경동나비엔</span></div>
+                      <div class="title"><span>경동나비엔 2분기 판매협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>수요개발</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020.05.25</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>(주)티엠씨</span></div>
+                      <div class="title"><span>TMC 면담결과 보고</span></div>
+                      <div class="info">
+                        <span>김준희</span><span class="bar">|</span><span>시황</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020.05.21</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>STEMCOR</span></div>
+                      <div class="title"><span>Stemcor 업무 인수 인계 협의</span></div>
+                      <div class="info">
+                        <span>최은영</span><span class="bar">|</span><span>가격/물량</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/21</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>대림씨엔에스(주)</span></div>
+                      <div class="title"><span>대림씨엔에스 3분기 PJT 발주협의</span></div>
+                      <div class="info">
+                        <span>김진황</span><span class="bar">|</span><span>수요개발</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+  
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>(주)경동나비엔</span></div>
+                      <div class="title"><span>SJM '20.5~7월 시황 및 단가협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>수요개발</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+  
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="title"><span>편면도금 #C 관련 업무협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>(주)삼림스틸</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+  
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="title"><span>센코어테크 3분기 후판공급협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>(주)경동나비엔</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="title"><span>경동나비엔 2분기 판매협의@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span></div>
+                      <div class="info">
+                        <span>이은경@@@@@@@@@@@@@@@@@@@@</span><span class="bar">|</span><span>(주)경동나비엔@@@@@@@@@@@@@@@@@@</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+  
+  
+  
+            </div>
+            
+  
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="wrap_page wrap-menu" data-index="3">
+        <div class="page_content">
+          <div class="page_top">
+            <div class="page_top_input">
+              <input type="text" class="page_input" placeholder="제목, 고객사명, 등록자 입력">
+              <a href="javascript:page_search();">
+                <img src="mobile/img/content/ic_search_dis.png">
+              </a>
+            </div>
+            <div class="page_top_btn">    
+              <a href="javascript:page_result_on()" class="btn_list">
+                <img src="mobile/img/content/ic_bookmark_list.png">
+                <span>목록전체보기</span>
+              </a>
+            </div>
+          </div>
+          <div class="touch_list_swiper"></div>
+          <div class="content_list" style="top: 0px;">
+            <div class="list_top_info_top list_top_underline list_swiper">
+              <div class="list_top_info_top list_top_title">
+                <span>최근 추가 목록</span>
+              </div>
+              <div class="list_top_info_top list_top_reflash">
+                <a href="#" class="list_top_reflash_a">
+                  <img src="mobile/img/content/ic_refresh.png" class="list_top_reflash_img">
+                </a>
+              </div>
+            </div>
+            <div class="content_list_info">
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>(주)경동나비엔</span></div>
+                      <div class="title"><span>경동나비엔 2분기 판매협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>수요개발</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020.05.25</span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>(주)티엠씨</span></div>
+                      <div class="title"><span>TMC 면담결과 보고</span></div>
+                      <div class="info">
+                        <span>김준희</span><span class="bar">|</span><span>시황</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020.05.21</span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>STEMCOR</span></div>
+                      <div class="title"><span>Stemcor 업무 인수 인계 협의</span></div>
+                      <div class="info">
+                        <span>최은영</span><span class="bar">|</span><span>가격/물량</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/21</span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>대림씨엔에스(주)</span></div>
+                      <div class="title"><span>대림씨엔에스 3분기 PJT 발주협의</span></div>
+                      <div class="info">
+                        <span>김진황</span><span class="bar">|</span><span>수요개발</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="company"><span>(주)경동나비엔</span></div>
+                      <div class="title"><span>SJM '20.5~7월 시황 및 단가협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>수요개발</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="title"><span>편면도금 #C 관련 업무협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>(주)삼림스틸</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="title"><span>센코어테크 3분기 후판공급협의</span></div>
+                      <div class="info">
+                        <span>이은경</span><span class="bar">|</span><span>(주)경동나비엔</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="content_list_info_list">
+                <a href="view.html" class="content_list_left_a">
+                  <div class="content_list_left">
+                    <div class="content_left">
+                      <div class="title"><span>경동나비엔 2분기 판매협의@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span></div>
+                      <div class="info">
+                        <span>이은경@@@@@@@@@@@@@@@@@@@@</span><span class="bar">|</span><span>(주)경동나비엔@@@@@@@@@@@@@@@@@@</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content_list_right">
+                    <div class="date"><span>2020/05/25</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrap_my wrap-menu" data-index="4">
+        <div class="my_content">
+          <div class="my_top">
+            <div class="profile">
+              <div class="my_info">
+                <span class="my_name">김철강</span>
+                <div class="info">
+                  <span>과장</span>
+                  <span class="bar">|</span>
+                  <span>마케팅전략그룹</span>
+                </div>
+                <div class="info2">
+                  <span>포스코센터</span>
+                  <span class="bar">|</span>
+                  <span>서울</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="my_list list_info">
+              <a href="#" class="write_info list_info">
+                <div class="info line">
+                  <div class="img">
+                    <img src="mobile/img/content/ic_more_01.png" alt="">
+                  </div>
+                  <span class="write">작성글</span>
+                  <span class="number">24</span>
+                </div>
+              </a>
+
+              <a href="javascript:page_result_on();" class="my_info list_info">
+                <div class="info line">
+                  <div class="img">
+                    <img src="mobile/img/content/ic_more_02.png" alt="">
+                  </div>
+                  <span class="write">즐겨찾기</span>
+                  <span class="number">32</span>
+                </div>
+              </a>
+
+              <a href="#" class="search_info list_info">
+                <div class="info">
+                  <div class="img">
+                    <img src="mobile/img/content/ic_more_03.png" alt="">
+                  </div>
+                  <span class="write">미등록정보</span>
+                  <span class="number">3</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+
+          <!-- my_menu content -->
+          <div class="touch_list_swiper"></div>
+          <div class="my_menu">
+
+            <div class="my_menu_top my_menu_underline">
+              <div class="my_menu_top my_menu_title">
+                <span>메뉴 목록</span>
+              </div>
+              <div class="my_menu_top list_top_reflash">
+                <a href="#" class="my_menu_top_reflash_a">
+                  <img src="mobile/img/content/ic_option.png" class="list_top_reflash_img">
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="my_menu_list">
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+              <div class="menu">
+                <span>메뉴</span>
+              </div>
+            </div>
+          </div>
+          <!-- my_menu content -->
+          <!-- <div class="notice_img">
+            <div class="img_center">
+              <img  src="mobile/img/content/ic_more_empty.png"/>
+            </div>
+            <span>서비스 <strong>준비중</strong>입니다</span>
+          </div> -->
+        </div>
+
+
+      </div>
+
+
+    </div> 
+
+    <footer>
+      <div class="footer_bottom">
+        <div class="footer_menu">
+
+          <div class="footer_menu_list active" data-index="1">
+            <a href="javascript:onFooter(1);" class="menu_a">
+              <img src="mobile/img/gnb/ic_menu_01_on.png" id="footer_menu_img_on" class="footer_menu_img selected"/>
+              <img src="mobile/img/gnb/ic_menu_01_off.png" id="footer_menu_img_off" class="footer_menu_img"/>
+            </a>
+          </div>
+          <div class="footer_menu_list" data-index="2">
+            <a href="javascript:onFooter(2);" class="menu_a">
+              <img src="mobile/img/gnb/ic_menu_02_on.png" id="footer_menu_img_on" class="footer_menu_img"/>
+              <img src="mobile/img/gnb/ic_menu_02_off.png" id="footer_menu_img_off" class="footer_menu_img selected"/>
+            </a>
+          </div>
+
+
+          <div class="footer_menu_list footer_menu_list_center">
+            <nav class="menu">
+              <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+
+              <label class="menu-open-button" for="menu-open">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+              </label>
+              
+              <a href="#" class="menu-item fa1"> <i class="fa fa-write">
+                <img src="mobile/img/content/ic_center_01.png"/>
+                
+              </i> </a>
+              <a href="#" class="menu-item fa2"> <i class="fa fa-user">
+                <img src="mobile/img/content/ic_center_02.png"/>
+                
+              </i> </a>
+              <a href="#" class="menu-item fa3"> <i class="fa fa-folder">
+                <img src="mobile/img/content/ic_center_03.png"/>
+                
+              </i> </a>
+            
+            </nav>
+          </div>
+
+
+          <div class="footer_menu_list" data-index="3">
+            <a href="javascript:onFooter(3);" class="menu_a">
+              <img src="mobile/img/gnb/ic_menu_03_on.png" id="footer_menu_img_on" class="footer_menu_img"/>
+              <img src="mobile/img/gnb/ic_menu_03_off.png" id="footer_menu_img_off" class="footer_menu_img selected"/>
+            </a>
+          </div>
+
+          <div class="footer_menu_list" data-index="4">
+            <a href="javascript:onFooter(4);" class="menu_a">
+              <img src="mobile/img/gnb/ic_menu_04_on.png" id="footer_menu_img_on" class="footer_menu_img"/>
+              <img src="mobile/img/gnb/ic_menu_04_off.png" id="footer_menu_img_off" class="footer_menu_img selected"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+
+  <script type="text/javascript">
+
+    var swiper1 = new Swiper('.swiper-container1', {
+      centeredSlides: true,
+      slidesPerView: 1.15,
+      spaceBetween: 12
+    });
+
+    var swiper2 = new Swiper('.swiper-container2', {
+      slidesPerView: 'auto',
+      centeredSlides: false,
+      initialSlide: 0,
+      spaceBetween: 6
+    });
+  </script>
+  </body>
+</html>

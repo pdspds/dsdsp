@@ -1,0 +1,220 @@
+.root {
+    .wrap {
+        .wrap_my {
+            width: 100%;
+            height: 100%;
+            // height: calc(100% - 155px);
+            .my_content {
+                height: 100%;
+                display: block;
+                align-items: center;
+                // width: calc(100% - 15%);
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                // padding: 10px 0;
+                .notice_img {
+                    height: calc( 100% - 430px );
+                    .img_center {
+                        padding-top: 90px;
+                        padding-bottom: 10px;
+                        width: 100%;
+                        position: relative;
+                        img {
+                            width: 110px;
+                            height: 90px;
+                        }
+                    }
+                    span {
+                        font-size: 1.4rem;
+                        color: $fontColorB;
+                        strong {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    
+                }
+                .my_top {
+                    width: calc(100% - 15%);
+                    margin: auto;
+                    top: 0;
+                    // height: 40%;
+                    position: relative;
+                    .profile {
+                        width: 100%;
+                        // img {
+                        //     width: 25%;
+                        // }
+                        .my_info {
+                            width: 100%;
+                            color: #fff;
+                            .bar {
+                                color: #ffffff6e;
+                                margin: 0px 5px;
+                                font-size: 0.6rem !important;
+                                position: relative;
+                                top: -2.5px;
+                            }
+                            .my_name {
+                                font-size: 2.4rem;
+                                font-weight: bold;
+                                width: 100%;
+                                position: relative;
+                                display: block;
+                                padding-bottom: 2px;
+                                padding-top: 15px;
+                                // line-height: 0.7;
+                            }
+                            .info {
+                                // padding-bottom: 5px;
+                                span {
+                                    font-size: 1.2rem;
+                                }
+                                width: 100%;
+                                position: relative;
+                            }
+                            .info2 {
+                                padding-bottom: 48px;
+                                // padding-bottom: 2.5px;
+                                span {
+                                    font-size: 1.2rem;
+                                }
+                                width: 100%;
+                                position: relative;
+                            }
+
+                        }
+                    }
+                    .list_info {
+                        height: 118px;
+                        display: flex;
+                        align-items: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        position: relative;  
+                    }
+                    .my_list {
+                        background: url('../img/content/more_contents_bg.png') no-repeat center/ cover;
+                        border-radius: 10px;
+                        width: 100%;
+                        position: relative;
+                        .list_info {
+                            text-decoration: none;
+                            height: 120px;
+                            width: 33.3%;
+                            .info {
+                                width: 100%;
+                                height: 80px;
+                                &.line {
+                                    border-right: 1px solid rgba(255, 255, 255, 0.158);
+                                }
+                            }
+                            .img {
+                                margin: 5px 0 10px 0;
+                                height: 20px;
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+
+                            }
+                            .number {
+                                color: #fff;
+                                display: block;
+                                // font-weight: bold;
+                                font-size: 2.0rem;
+                                // margin-bottom: 5%;
+                            }
+    
+                            .write {
+                                margin: auto auto 5px auto;
+                                height: 12px;
+                                color: $fontColorB;
+                                display: block;
+                                font-size: 1.2rem;
+                            }
+                            
+    
+                        }
+                    }
+                }
+
+                .touch_list_swiper {
+                    // top: 60%;
+                    top: 400px;
+                    // background: #ffffff00;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    position: absolute;
+                    z-index: 2;
+                
+                }
+
+                .my_menu {
+                    top: 0%;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 40px;
+                    padding-bottom: 30%;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background: #fff;
+                    position: relative;
+                    z-index: 1;
+                    transform: translateY(0px);
+                    // height: auto;
+                    // background: #dddddd;
+                    .my_menu_top {
+                        height: 55px;
+                        display: flex;
+                        align-items: center;
+                        width: calc(100% - 15%);
+                        margin-left: auto;
+                        margin-right: auto;
+                        position: relative;
+                        &.my_menu_underline {
+                            border-bottom: 1px solid #DEDEDE;
+                        }
+
+                        span {
+                            // width: 65%;
+                            font-weight: bold;
+                            font-size: 1.6rem;
+                        }
+                        a {
+                            position: absolute;
+                            float: right;
+                            right: 0;
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                float: right;
+                            }
+                        }
+                    }
+                    .my_menu_list {
+                        position: relative;
+                        height: 100%;
+                        overflow-y: hidden;
+                        width: calc(100% - 15%);
+                        margin: auto;
+                        padding-bottom: 105px;
+                        .menu {
+                            width: 100%;
+                            height: 55px;
+                            text-align: left;
+                            padding: 15px 0;
+                            border-bottom: 1px solid #DEDEDE;
+                            span {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+}

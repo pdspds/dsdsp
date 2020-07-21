@@ -1,0 +1,21 @@
+@charset "utf-8";
+@font-face{
+  font-family:'notokr';
+  src:url(../font/NotoSansKR-Regular.woff) format('woff');
+  src:url(../font/NotoSansKR-Regular.woff2) format('woff2');
+  src:url(../font/NotoSansKR-Regular.otf) format('opentype');
+  font-weight:normal;
+}
+@font-face{
+  font-family:'notokr';
+  src:url(../font/NotoSansKR-Bold.woff) format('woff');
+  src:url(../font/NotoSansKR-Bold.woff2) format('woff2'); 
+  src:url(../font/NotoSansKR-Bold.otf) format('opentype');
+  font-weight:bold;
+}
+
+
+* {
+    font-family: 'notokr', sans-serif !important;
+}
+
